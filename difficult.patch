@@ -1,0 +1,55 @@
+--- tmp.txt	2015-06-20 14:51:49.383400324 +0300
++++ basic-html5-and-css.json	2015-06-20 15:10:10.126767079 +0300
+@@ -52,7 +52,7 @@
+     {
+       "_id": "bad87fee1348bd9aedf0887a",
+       "name": "Waypoint: Headline with the h2 Element",
+-      "difficulty": 0.01,
++      "difficulty": 0.010,
+       "description": [
+         "Add an <code>h2</code> tag that says \"CatPhotoApp\" to create a second HTML <code>element</code> below your \"Hello World\" <code>h1</code> element.",
+         "The <code>h2</code> element you enter will create an <code>h2</code> element on the website.",
+@@ -499,7 +499,7 @@
+     {
+       "_id": "bad87fee1348bd9aefe08806",
+       "name": "Waypoint: Style Multiple Elements with a CSS Class",
+-      "difficulty": 0.02,
++      "difficulty": 0.020,
+       "description": [
+         "Apply the \"red-text\" class to your <code>h2</code> and <code>p</code> elements.",
+         "Remember that you can attach classes to HTML elements by using <code>class=\"your-class-here\"</code> within the relevant element's opening tag.",
+@@ -1029,7 +1029,7 @@
+     {
+       "_id": "bad87fee1348bd9aedf08815",
+       "name": "Waypoint: Make Circular Images with a Border Radius",
+-      "difficulty": 0.03,
++      "difficulty": 0.030,
+       "description": [
+         "Give your cat photo a <code>border-radius</code> of 50%.",
+         "In addition to pixels, you can also specify a <code>border-radius</code> using a percentage."
+@@ -1735,7 +1735,7 @@
+     {
+       "_id": "bad87fee1348bd9aede08830",
+       "name": "Waypoint: Create a Form Element",
+-      "difficulty": 0.04,
++      "difficulty": 0.040,
+       "description": [
+         "Wrap your text field in a <code>form</code> element. Add the <code>action=\"/submit-cat-photo\"</code> attribute to this form element.",
+         "You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action on your <code>form</code> element.",
+@@ -2851,7 +2851,7 @@
+     {
+       "_id": "bad87fee1348bd9aedf08726",
+       "name": "Waypoint: Use Clockwise Notation to Specify the Margin of an Element",
+-      "difficulty": 0.07,
++      "difficulty": 0.070,
+       "description": [
+         "Let's try this again, but with <code>margin</code> this time. Use <code>Clockwise Notation</code> to give an element a margin of 40 pixels on its top and left side, but only 20 pixels on its bottom and right side.",
+         "Instead of specifying an element's <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code> attributes, you can specify them all in one line, like this: <code>margin: 10px 20px 10px 20px;</code>.",
+@@ -2862,6 +2862,7 @@
+         "assert($('.green-box').css('margin-right') === '20px', 'Your <code>green-box</code> class should give the right of elements 20px of <code>margin</code>.')",
+         "assert($('.green-box').css('margin-bottom') === '20px', 'Your <code>green-box</code> class should give the bottom of elements 20px of <code>margin</code>.')",
+         "assert($('.green-box').css('margin-left') === '40px', 'Your <code>green-box</code> class should give the left of elements 40px of <code>margin</code>.')"
++
+       ],
+       "challengeSeed": [
+         "<style>",
