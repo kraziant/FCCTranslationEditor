@@ -1,2 +1,4 @@
 node_modules/
 .settings/
+tmp.txt
+tmp.txt.orig
