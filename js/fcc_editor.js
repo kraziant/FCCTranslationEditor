@@ -20,6 +20,15 @@ function zip(desc, trans) {
 }
  
 $(document).ready(function(){
+  
+  var speller = new Speller(
+    { url: "/speller",
+      lang: "ru", options: Speller.IGNORE_LATIN + Speller.IGNORE_URLS,
+      spellDlg: { width: 500, height: 320 }
+    }
+  );
+   
+ 
  $.getJSON('/get_data', function ( data ) {
    translate_json = data;
    data.challenges.forEach(function( el ) {
@@ -62,6 +71,15 @@ $(document).ready(function(){
                 .text('Description:')
             )
             .append(text)
+            .append(
+              $('<button></button>')
+                .text('Spell check')
+                .addClass('btn')
+                .addClass('btn-success')
+                .click(function () {
+                  speller.check($('textarea', $('#sandbox')));
+                })
+            )
             .append(
               $('<button></button>')
                 .text('Save')
