@@ -2,6 +2,9 @@
 
 http://youtu.be/R6NzgzoOkf4.
 
+## @develop
+Spell checker via [Yandex.Speller](https://tech.yandex.ru/speller/)
+
 ## Required
 
   + Node.js
