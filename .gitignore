@@ -2,3 +2,5 @@ node_modules/
 .settings/
 tmp.txt
 tmp.txt.orig
+*.zip
+*.mkv
