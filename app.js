@@ -1,7 +1,9 @@
 var fs = require('fs');
 var express = require('express');
 var bodyParser = require('body-parser')
+
 var app = express();
+
 var exec = require('child_process').exec;
 
 
@@ -15,7 +17,7 @@ app.use(bodyParser.json({limit: '5mb'}));
 
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/js', express.static(__dirname + '/js'));
-
+app.use('/speller', express.static(__dirname + '/speller'));
 
 app.get('/', function (req, res) {
   fs.readFile('index.html', 'utf8', function (err, data) {
@@ -28,6 +30,7 @@ app.get('/', function (req, res) {
 
 app.get('/get_data', function (req, res) {
   fs.readFile(config.target, 'utf8', function (err, data) {
+    console.log('data request');
     if (err) {
       res.send( err );
       return console.log(err);
